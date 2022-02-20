@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="by">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>>Play and learn english</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+  <div class="container">
+
+    <pre class="text-main-parts">Учим  АНГЛИЙСКИЙ  играючи :)</pre>
+
+    <pre class="text-parts">Теперь запоминать 
+слова гораздо проще! 
+
+Учебник и игры 
+помогут вам пройти
+этот путь джедая:)
+
+Главное не сдаваться
+и каждый день по чуть-чуть
+двигаться вперёд!</pre>
+
+    <div class="btn-parts">
+
+      <div class="btn-left">
+        <button class="game1 btn-big" onmouseover="bgFullOpacity()" onmouseout="bgZeroOpacity()">игра 'Аудиовызов'</button>
+        <button class="game2 btn-big" onmouseover="bgFullOpacity()" onmouseout="bgZeroOpacity()">игра 'Спринт'</button>
+      </div>
+
+      <div class="btn-right">
+        <button class="reg btn-small" onmouseover="bgFullOpacity()" onmouseout="bgZeroOpacity()">Регистрация</button>
+        <button class="textBook btn-big" onmouseover="bgFullOpacity()" onmouseout="bgZeroOpacity()">Учебник</button>
+        <button class="stat btn-small" onmouseover="bgFullOpacity()" onmouseout="bgZeroOpacity()">Статистика</button>
+      </div>
+
+    </div>
+
+    <div class="textBook-menu">
+
+      <div class="chapter-menu">
+        <p class="chapter-title">РАЗДЕЛ</p>
+        <nav aria-label="Chapter navigation">
+          <ul class="pagination">
+            <li class="page-item previousChapter">
+              <a class="page-link prevChapter" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="chapter-item">
+              <select id="chapter" class="chapter-sort form-select-md form-select text-black" aria-label="Раздел">
+          <option selected value="0">1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+          <option value="3">4</option>
+          <option value="4">5</option>
+          <option value="5">6</option>
+          <option value="6">7</option>
+        </select>
+            </li>
+            <li class="page-item nextChapter">
+              <a class="page-link nxChapter" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="page-menu">
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li class="page-item previousPage">
+              <a class="page-link prevPage" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <select id="pages" class="page-sort form-select-md form-select text-black" aria-label="Страница">
+          <option selected value="0">1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+          <option value="3">4</option>
+          <option value="4">5</option>
+          <option value="5">6</option>
+          <option value="6">7</option>
+          <option value="7">8</option>
+          <option value="8">9</option>
+          <option value="9">10</option>
+          <option value="10">11</option>
+          <option value="11">12</option>
+          <option value="12">13</option>
+          <option value="13">14</option>
+          <option value="14">15</option>
+          <option value="15">16</option>
+          <option value="16">17</option>
+          <option value="17">18</option>
+          <option value="18">19</option>
+          <option value="19">20</option>
+          <option value="20">21</option>
+          <option value="21">22</option>
+          <option value="22">23</option>
+          <option value="23">24</option>
+          <option value="24">25</option>
+          <option value="25">26</option>
+          <option value="26">27</option>
+          <option value="27">28</option>
+          <option value="28">29</option>
+          <option value="29">30</option>
+        </select>
+            </li>
+            <li class="page-item nextPage">
+              <a class="page-link nxPage" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="chapter-title">СТРАНИЦА</p>
+      </div>
+
+    </div>
+
+
+    <div class="main-menu">
+      <img class="home" src="img/home.svg" alt="home" height="45" title="На главную"></a>
+      <img class="game" src="img/game.svg" alt="game" height="45" title="Игры"></a>
+      <img class="book" src="img/book.svg" alt="book" height="40" title="Учебник"></a>
+      <img class="statistic" src="img/statistic.svg" alt="statistic" height="45" title="Статистика"></a>
+      <img class="team" src="img/team.svg" alt="team" height="45" title="О команде"></a>
+    </div>
+
+
+    <div id="words"></div>
+
+
+  </div>
+
+
+  <footer class="footer-main">
+    <div class="inFooter">
+      <div>
+        <p>2022 <i class="madeBy">made by TAUKACHOU ALIAKSEI</i></p>
+      </div>
+      <div>
+        <ul class="footer-links">
+          <li><a href="https://github.com/oleksiy-tov" target="_blank">
+              <img src="img/github.svg" alt="github" height="30"></a>
+            <p class="madeBy">My GitHub</p>
+          </li>
+
+          <li><a href="https://rs.school/js/" target="_blank">
+              <img src="img/rss.svg" class="rss-link" alt="RS School" height="50"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="words/data.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+
+</html>
