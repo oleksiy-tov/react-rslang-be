@@ -79,7 +79,7 @@
   box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
   cursor: pointer !important;
   font-size: 2.5vw;
-animate: fullbg 5s;
+  animate: fullbg 5s;
 }
 
 .btn-big {
@@ -199,6 +199,7 @@ animate: fullbg 5s;
 }
 
 .words-element {
+  position: relative;
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -221,11 +222,15 @@ animate: fullbg 5s;
 }
 
 .words-description {
+  position: relative;
   font-size: 20px;
+  width: 95%;
 }
 
 .words-translate {
-font-style: italic;
+  position: relative;
+  font-style: italic;
+  width: 90%;
 }
 
 .line {
@@ -234,9 +239,10 @@ font-style: italic;
 }
 
 .audio {
-  position: relative;
+  position: absolute;
   width: 8%;
-  left: 33vw;
+  top: 92%;
+  left: 29vw;
   cursor: pointer;
 }
 
